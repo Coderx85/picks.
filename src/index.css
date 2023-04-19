@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+}
+
+body,
+html {
+  background-color: rgb(234, 237, 237);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+
+  /* font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif; */
+  
+}
