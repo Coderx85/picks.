@@ -5,22 +5,27 @@ import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
   return (
-    <header className="bg-black max-w-1920px w-full h-12 px-2 md:px-4">
-      {/* desktop */}
+    <header>
+        {/* Top Nav */}
 
-      <div className="flex items-center h-12 justify-between">
-        <div className="flex">
+      <div className="flex items-center bg-black flex-grow justify-between">
+        <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           <Link to={""}>
             <div className="h-12 ">
-              <img src={logo5} className=" h-full " />
+              <img src={logo5} className=" h-10 object-contain " />
             </div>
           </Link>
-          <div className="w-100%">
-            <CiSearch />
+
+          {/* Search Bar */}
+
+          <div className="">
+            <CiSearch className="h-12 p-4 color:white"/>
           </div>
         </div>
 
-        <div className="flex-wrap gap-y-2">
+        {/* Right Nav */}
+
+        <div className="">
           <Link
             className="px-4 py-1 text-sm rounded-full border bg-transparent hover:bg-white hover:bg-opacity-25"
             to={""}
@@ -41,7 +46,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      {/* mobile */}
+
     </header>
   );
 };
