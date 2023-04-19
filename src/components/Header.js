@@ -5,40 +5,40 @@ import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
   return (
-    <header className="bg-black fixed shadow-md w-full h-14 px-2 md:px-4">
+    <header className="bg-black max-w-1920px w-full h-12 px-2 md:px-4">
       {/* desktop */}
 
       <div className="flex items-center h-12 justify-between">
-        <Link to={""}>
-          <div className="h-12 ">
-            <img src={logo5} className=" h-full " />
+        <div className="flex">
+          <Link to={""}>
+            <div className="h-12 ">
+              <img src={logo5} className=" h-full " />
+            </div>
+          </Link>
+          <div className="w-100%">
+            <CiSearch />
           </div>
-        </Link>
-        <div className="">
-          <CiSearch />
         </div>
 
-        <div className="">
-          <nav>
-            <Link
-              className="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
-              to={""}
-            >
-              Help {"&"} Contact
-            </Link>
-            <Link
-              className="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
-              to={""}
-            >
-              Log In
-            </Link>
-            <Link
-              className="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
-              to={""}
-            >
-              Register
-            </Link>
-          </nav>
+        <div className="flex-wrap gap-y-2">
+          <Link
+            className="px-4 py-1 text-sm rounded-full border bg-transparent hover:bg-white hover:bg-opacity-25"
+            to={""}
+          >
+            Help {"&"} Contact
+          </Link>
+          <Link
+            className="px-4 py-1 text-sm rounded-full border bg-transparent hover:bg-white hover:bg-opacity-25"
+            to={""}
+          >
+            Log In
+          </Link>
+          <Link
+            className="px-4 py-1 text-sm rounded-full border bg-[#d4b962] text-black hover:bg-white hover:bg-opacity-25 border-transparent bg-transparent hover:bg-[#dfcb89;]"
+            to={""}
+          >
+            Register
+          </Link>
         </div>
       </div>
       {/* mobile */}
