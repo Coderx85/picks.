@@ -13,7 +13,11 @@ const Header = () => {
         <div className="mt-2 flex items-center flex-grow sm:flex-grow-0">
           <Link to={""}>
             <div className="h-12 mx-2">
-              <img src={logo5} className=" h-10 object-contain " />
+              <img
+                src={logo5}
+                alt="beiskylogo"
+                className=" h-10 object-contain "
+              />
             </div>
           </Link>
 
@@ -28,24 +32,18 @@ const Header = () => {
 
         <div className="flex items-center text-xs space-x-4 mx-3 whitespace-nowrap ">
           <Link
-            className="cursor-pointer flex items-center px-4 py-1 text-sm rounded-full border bg-transparent hover:bg-white hover:bg-opacity-25"
+            className="btn"
             to={""}
           >
             <p>Help {"&"} Contact .</p>
             <RiCustomerService2Fill className="h-5" />
           </Link>
 
-          <Link
-            className="cursor-pointer px-4 py-1 text-sm rounded-full border bg-transparent hover:bg-white hover:bg-opacity-25 "
-            to={""}
-          >
+          <Link className="btn " to={""}>
             <p>Log In</p>
           </Link>
 
-          <Link
-            className="cursor-pointer px-4 py-1 text-sm rounded-full border bg-[#d4b962] text-black hover:bg-white hover:bg-opacity-25 border-transparent bg-transparent hover:bg-[#dfcb89;]"
-            to={""}
-          >
+          <Link className="btn_gold" to={""}>
             <p>Register</p>
           </Link>
         </div>
