@@ -5,7 +5,7 @@ import { GrHomeRounded } from "react-icons/gr";
 function Header2() {
   return (
     <div className='className="flex font-semibold items-center bg-black flex-grow justify-between'>
-      <div className="flex items-center text-xs space-x-4 mx-4 py-2 whitespace-nowrap ">
+      <div className="flex justify-center items-center text-xs space-x-4 mx-4 py-2 whitespace-nowrap ">
         <Link className="btn_white" to={""}>
           <GrHomeRounded className="flex stroke-black h-5 " />
           <p className="mx-1">Home</p>
@@ -44,19 +44,11 @@ function Header2() {
         </Link>
 
         <Link className="btn" to={""}>
-          <p>Easy Parley</p>
-        </Link>
-
-        <Link className="btn" to={""}>
           <p>A-Z Sports</p>
         </Link>
 
         <Link className="btn" to={""}>
           <p>Favourites</p>
-        </Link>
-
-        <Link className="btn" to={""}>
-          <p>Promotions</p>
         </Link>
 
         <Link className="btn" to={""}>

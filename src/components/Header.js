@@ -24,8 +24,12 @@ const Header = () => {
           {/* Search Bar */}
 
           <div className="flex h-10 mx-10 w-6/12 mt-1">
-            <CiSearch className="object-fill h-7 w-7" />
-            <input className="h-7 w-full rounded-full" type="text" />
+            <CiSearch className="object-fill h-7 w-7 cursor-pointer" />
+            <input
+              className="h-7 w-full rounded-full placeholder:text-slate-600 placeholder:opacity-60 hover:placeholder-opacity-100 placeholder:text-sm"
+              type="text"
+              placeholder="  Search for Teams, Players or Events"
+            />
           </div>
         </div>
 
