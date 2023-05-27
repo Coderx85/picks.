@@ -1,3 +1,10 @@
+import './fonts/NeueHaasDisplay/NeueHaasDisplayBold.ttf';
+import './fonts/NeueHaasDisplay/NeueHaasDisplayLight.ttf';
+import './fonts/NeueHaasDisplay/NeueHaasDisplayMediu.ttf';
+import './fonts/Thunder/Thunder-BoldLC.ttf';
+
+
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -9,6 +16,8 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(<Route path="/" element={<App />}></Route>)

@@ -12,19 +12,19 @@ html {
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: white;
-
-  /* font-family: "Raleway", sans-serif;
-  font-family: "Roboto", sans-serif; */
 }
 
-.btn {
-  @apply w-full flex text-center cursor-pointer px-3 py-1 text-sm rounded-full border border-stone-600 bg-transparent hover:bg-white hover:bg-opacity-25;
-}
+@font-face {
+  font-family: "NeueHaasDisplay";
+  src: local("NeueHaasDisplay"),
+   url("./fonts/NeueHaasDisplay/NeueHaasDisplayBold.ttf") format("truetype");
+  font-weight: bold;
+ }
+ 
 
-.btn_gold{
-  @apply cursor-pointer px-4 py-1 text-sm rounded-full border bg-[#cab15d] text-black hover:bg-white hover:bg-opacity-25 border-transparent hover:bg-[#dfcb89;]
-}
 
-.btn_white{
-  @apply flex w-full cursor-pointer px-2 py-1 text-sm rounded-full border bg-[#ffffff] text-black hover:bg-white border-transparent;
+@layer base {
+  button{
+    @apply border border-black  rounded-sm px-5 py-1;
+  }
 }

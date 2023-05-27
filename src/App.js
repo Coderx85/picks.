@@ -1,13 +1,13 @@
-import "./App.css";
+import React from "react";
 import Header from "./components/Header";
-import Header2 from "./components/Header2";
+import Hero from "./components/hero";
 
 function App() {
   return (
-   <div>
+   <>
      <Header/>
-     <Header2/>
-   </div>
+     <Hero/>
+  </>
   );
 }
 
