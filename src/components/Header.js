@@ -27,14 +27,6 @@ const Header = () => {
         {/* Right Nav */}
 
         <div className="text-black flex items-center space-x-4 mx-3 whitespace-nowrap">
-          <input
-            type="text"
-            placeholder="Search..."
-            value={searchTerm}
-            onChange={handleSearchChange}
-            className="border border-black px-2 py-1 rounded"
-          />
-          <button onClick={handleSearch} className="border border-black px-2 py-1 rounded">Search</button>
           <Link className="px-2" to="/become-a-seller">
             <p>Become a Seller</p>
           </Link>
